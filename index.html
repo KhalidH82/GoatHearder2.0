@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Goat Herder</title>
+	<link rel='stylesheet' href='style.css' type='text/css'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Nanum+Brush+Script' rel='stylesheet'>
+
+</head>
+
+<body>
+
+	<section class="hero is-small">
+		<div class="hero-body">
+			<figure class="image is-3by1">
+				<img src="/Images/goatlogo.jpg" class='goat-logo'>
+			</figure>
+			<div class="container">
+				<h1 class="title">
+					Welcome to G.O.A.T Herder
+				</h1>
+
+				<div class="btn-ctn">
+					<button class='button is-info' onclick='createBoard()'> One Player </button>
+					<button class=' button btn2 is-info' onclick='createBoard2()'> Two Player </button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="score has-text-centered"></div>
+
+	<audio>
+		<source src='Sounds/baah.mp3' type='audio/mpeg' /></audio>
+	<audio id='win'>
+		<source src='Sounds/goatwin.mp3' type='audio/mpeg' /></audio>
+	<audio id='intro'>
+		<source src='Sounds/goatintro.mp3' type='audio/mpeg' /></audio>
+	<audio id='matchfound'>
+		<source src='Sounds/matchfound.mp3' type='audio/mpeg' /></audio>
+	<audio id='nomatch'>
+		<source src='Sounds/nomatch.mp3' type='audio/mpeg' /></audio>
+	<!-- <button class='home' style="display:none;"><a href='./index.html'>Home</a></button> -->
+	<script src='script.js'></script>
+</body>
+
+</html>

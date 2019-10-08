@@ -1,0 +1,81 @@
+.title,
+h2,
+.button {
+  font-family: "Nanum Brush Script", cursive;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(6, auto);
+  justify-items: center;
+  align-content: space-evenly;
+}
+
+.goatPhoto {
+  background: gray;
+  border: dodgerblue solid 2px;
+  width: 100px;
+  height: 100px;
+  padding: 2px;
+  margin: 5px;
+  opacity: 0.5;
+  transition: 0.3s;
+  border-radius: 15%;
+}
+
+.goatPhoto:hover {
+  opacity: 1;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  /* display: block;
+  float: right; */
+}
+
+button {
+  opacity: 0.4;
+  width: 125px;
+  height: 105px;
+
+  font-size: 30px;
+  /* border: 3px solid darkolivegreen; */
+  border-radius: 50%;
+  letter-spacing: -2px;
+}
+
+.btn-ctn {
+  display: grid;
+  justify-content: center;
+  grid-row-gap: 5px;
+}
+
+button:hover {
+  opacity: 1;
+  /* border: 3px solid white; */
+}
+
+input {
+  display: none;
+}
+
+h1 {
+  color: darkolivegreen;
+  text-shadow: 3px 2px white;
+  letter-spacing: 3px;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: -25px;
+}
+
+p {
+  color: darkolivegreen;
+  font-size: 40px;
+  display: block;
+  padding-left: 10px;
+  text-shadow: 2px 2px 4px white;
+}
