@@ -47,15 +47,14 @@ function bahintro() {
   sound5.play();
 }
 
-// clearDom();
-// bahintro();
-//Removes elements for landing page
-// function clearDom() {
-//   let start = document.querySelectorAll("div");
-//   start.forEach(function(element) {
-//     element.remove();
-//   });
-// }
+bahintro();
+
+function clearDom() {
+  let start = document.querySelectorAll("section");
+  start.forEach(function(element) {
+    element.remove();
+  });
+}
 
 //Creates a random board of images for 1 player
 function randomNumber() {
@@ -76,7 +75,7 @@ function createRandArray() {
 
 function createBoard() {
   bah();
-
+  clearDom();
   let button = (document.querySelector(".button").style.display = "none");
   let button2 = (document.querySelector(".btn2").style.display = "none");
   //   let backbutt = (document.querySelector(".home").style.display = "block");
