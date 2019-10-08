@@ -98,6 +98,7 @@ function createBoard() {
 //Creates 2 player board
 function createBoard2() {
   bah();
+  clearDom();
   let button = (document.querySelector(".button").style.display = "none");
   let button2 = (document.querySelector(".btn2").style.display = "none");
   //   let backbutt = (document.querySelector(".home").style.display = "block");
@@ -304,6 +305,9 @@ function winner() {
   endPage.setAttribute("id", "win2");
   endPage.innerHTML = "Congratulations you have herded all your goats!";
   body.appendChild(endPage);
+  setTimeout(() => {
+    location.reload();
+  }, 3000);
 }
 
 function winner2() {
