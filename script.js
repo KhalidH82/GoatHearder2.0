@@ -16,7 +16,7 @@ board.innerText = "";
 let board2 = document.createElement("h2");
 board2.innerText = "";
 let scoreBoard = document.getElementsByClassName("score");
-console.log(scoreBoard);
+
 let backbutt = document.createElement("home");
 
 //Soundboard
@@ -236,7 +236,6 @@ function checkMatch() {
     foundMatch();
     board.innerText = " Player 1 Matches: " + goatArray.length / 2;
 
-    console.log(board);
     scoreBoard[0].appendChild(board);
   } else if (goatArray[0] - goatArray[1] === -15) {
     checkWin.push(goatArray[0]);
@@ -244,7 +243,6 @@ function checkMatch() {
     foundMatch();
     board.innerText = " Player 1 Matches: " + goatArray.length / 2;
 
-    console.log(board);
     scoreBoard[0].appendChild(board);
   } else {
     noMatch();
