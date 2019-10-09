@@ -5,7 +5,7 @@ h2,
 }
 
 .image {
-  background: url("Images/goatlogo.jpg") no-repeat fixed center;
+  background: url("/Images/goatlogo.jpg") no-repeat fixed center;
   height: 500px;
   width: 100%;
 }
